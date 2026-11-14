@@ -1,0 +1,22 @@
+SLIK FUNGERER OPPDATERING
+=========================
+Appen leser version.json fra internett ved oppstart (og nar du trykker pa oppdater-knappen).
+Er versjonen der hoyere enn VERSION i appen, laster den ned ny DefineOptimization.exe og bytter seg selv ut.
+
+ENGANGSOPPSETT (GitHub, gratis)
+1. Repoet er  seanwls0123/DefineOptimization  (public).
+   Gir du repoet nytt navn, ma du endre det i:
+     - DefineOptimization.pyw  (UPDATE_URL)
+     - version.json
+2. Last opp version.json til repoet (rot-mappen, branch main).
+
+SLIPP EN NY VERSJON
+1. Endre VERSION i DefineOptimization.pyw og AppVersion i installer.iss (f.eks. 1.1.1).
+2. Kjor Bygg_installer.bat.
+3. GitHub -> Releases -> Create new release. Last opp dist\DefineOptimization.exe
+   (filnavnet ma vaere noyaktig DefineOptimization.exe) og publiser.
+4. Sett "version" i version.json til det nye nummeret og commit.
+   (Brukerne far oppdateringen innen noen minutter.)
+Del DefineOptimization_Setup.exe med nye brukere.
+
+Merk: CrosshairZ2.spec er ikke lenger i bruk. Du kan slette den.
